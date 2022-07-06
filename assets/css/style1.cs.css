@@ -1,0 +1,291 @@
+
+#navbarNav ul li:hover{ 
+    background-color: orange;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#span123{
+    position:unset ;
+}
+.active{
+	background-color: orange;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#newnav{
+  
+}
+.bigfooter footer{
+    object-position: bottom;
+    margin-top:5% !important;
+}
+.bigfooter .col-sm-6 p,.bigfooter .col-sm-6 svg{
+   display: inline-flex;
+}
+.bigfooter .col-sm-6 svg{
+    margin-bottom: 50px;
+}
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  25% {
+    opacity: 50%;
+    color: gold;
+    font-size: 32px;
+
+}
+75%{
+    opacity: 75%;
+    color: palegoldenrod;    
+}
+}
+#fnavbar a,.itslink{
+    text-decoration: none;
+    color: black;
+}
+#fnavbar a:hover,.itslink:hover{
+    color: burlywood;
+    font-size: 18px;
+}
+/*#fnavbar a:visited,.itslink:visited{
+    color: blueviolet;
+    font-size: 18px;
+}*/
+
+#containeraclass {
+    animation: span22 2s linear infinite;
+}
+@keyframes span22 {
+   25% {
+    color: orange;
+    font-size: 32px;
+
+}
+75%{
+    color: white;
+    font-size: 32px;   
+    font-stretch: unset;
+}
+
+}
+#fbmanu ul{
+    display: inline-flex;
+}
+#bbtt ul li a{
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+}
+#bbtt ul li a:hover{
+    color: burlywood;
+    font-size: 18px;
+}
+#fbmanu ul a:hover{
+    color: blue;
+    font-size: 18px;
+
+}
+.bffooter{
+    margin-top: 90%;
+}
+#clogin{
+    background-color: white;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom:solid hsl(177, 0%, 51%,.5) 12px ;
+    border-top:solid hsl(177, 0%, 51%,.5) 12px ;  
+
+}
+.colop1{
+ font-family: monospace;
+ margin-top: 35px;
+ font-size: 20px;
+ font-family: Poor Richard;
+}
+
+.loinform input{
+    width: 60%;
+    height: 45px;
+    margin-bottom: 5%;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.loinform input[type='password']{
+
+
+}
+.loinform button{
+    margin-bottom: 5%;
+    width: 50%;
+    padding: 1%;
+    border: none;
+    background-color:#eb2e32;
+    color: white;
+    border-radius: 10px;
+
+}
+.repan{
+    margin-top: -105px;
+    margin-left: 85%;
+    width: 200px;
+    height: 120px;
+    transform: rotate(40deg);
+    background: transparent;
+    position: relative;
+
+}
+.repan{
+    animation: movment 8s linear infinite; 
+}
+@keyframes movment{
+    10%{
+     transform: rotate(50deg); 
+ }
+ 30%{
+     transform: rotate(35deg); 
+ }
+ 50%{
+     transform: rotate(50deg); 
+ }
+ 70%{
+     transform: rotate(35deg); 
+ }
+ 90%{
+     transform: rotate(50deg); 
+ }
+}
+.registermenu{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.registermenu h1{
+    font-family: Poor Richard;
+}
+
+.registeri{
+    background-color: hsl(0, 0%, 50%,.25);
+    margin-top: -3%;
+}
+.reformmenu select{
+    background-color: white;
+    border: none;
+}
+.reformmenu input,.reformmenu select{
+    width: 75%;
+    color: black;
+    margin-top: 2.5%;
+    border: none;
+    border-bottom: 2px solid black;
+    /*border-right: 2px solid black;*/
+}
+.reformmenu input:hover{
+    box-shadow: 10px 10px 5px lightblue;
+
+}
+.reformmenu p{
+    color: red;
+}
+.reformmenu input:active{
+    box-shadow: 10px 10px 5px lightblue;
+
+}
+.reformmenu input:focus{
+    border: none;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.homepaage{
+    opacity: 75%;
+    height: 370px;
+    margin-top: -48px;
+    background-image: url('../image/img6.jpg');
+    object-position: 80% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.homepaage h1{
+    font-family:Poor Richard;
+    font-size: 80px;
+    color: orange;
+}
+.homepaage p{
+    color: black;
+    font-size: 20px;
+}
+
+.homepaage button{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+}
+
+/*.wewe{
+padding-right:100px;
+  object-position: 80% 10%;
+-webkit-mask-image: url(../image/mm.png);
+mask-image: url(../image/w3logo.png);
+-webkit-mask-repeat: no-repeat;
+mask-repeat: no-repeat; 
+}*/
+.svgimg svg{
+    border: 2px solid black;
+    border-radius: 70px;
+    width: 200px;
+    height: 30%;
+}
+
+
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  position: relative;
+  width: 36px;
+  font-size: 24px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  top: 3px;
+  line-height: 12px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  top: -10px;
+}
+.headerprofile img{
+    border-right: 20px;
+}
+
+.ulclass{
+    background-color: red;
+    margin-top: 5%;
+}
+.ulclass li{
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+
+
+

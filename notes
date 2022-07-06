@@ -1,0 +1,28 @@
+$fullurl ="http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                                // if(strpos($fullurl,"signup=emp") == true){
+                                //      $re =cuslogreg::repost();
+                                //     print_r($re);
+                                //     echo "<p  class='mt-4 text-danger fw-bold fs-5'>Some Values Is Empty</p> ";
+                                // }
+                                //  elseif(strpos($fullurl,"signup=chronly") == true){
+                                //      $re =cuslogreg::repost();
+                                //     print_r($re);
+                                //     echo "<p  class='mt-4 text-danger fw-bold fs-5'>Name only use letter's</p> ";
+                                // }
+                                //  elseif(strpos($fullurl,"signup=em") == true){
+                                //     $re =cuslogreg::repost();
+                                //     print_r($re);
+                                //      echo "<p  class='mt-4 text-danger fw-bold fs-5'>Enter Valied Email</p> ";
+                                // }
+                                //  elseif(strpos($fullurl,"signup=pe") == true){
+                                //      $re =cuslogreg::repost();
+                                //     print_r($re);
+                                //     echo "<p  class='mt-4 text-danger fw-bold fs-5'>Enter Valied Phone No</p> ";
+                                // }
+                                //  elseif(strpos($fullurl,"signup=aldy") == true){
+                                //      $re =cuslogreg::repost();
+                                //     ?>
+                                //     <p><?php print_r($re); ?></p>
+                                //                                         <?php
+                                //     echo "<script>alert('You Have account')</script>";
+                                // }

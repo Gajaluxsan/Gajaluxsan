@@ -1,0 +1,82 @@
+
+
+
+
+/*mediam Screen*/
+@media only screen and (max-width: 768px) {
+.active{
+  margin-top: 8%;
+}
+#navbarNav ul li{
+  font-size: 15px;
+  text-align: center;
+  border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+header {
+  background-color: green;
+}
+.navbar a{
+  /* background-color: white; */
+}
+#navbarNav ul li{
+    color: black;
+  }
+
+#fnavbar{
+  margin: 0;
+  font-size: 8;
+  text-align: center;
+}
+ #fnavbar h5{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  #fnavbar li a{
+    text-align: center;
+
+  }
+  .clogin{
+    background-color: red;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+  .homepaage h1{
+    font-family:Poor Richard;
+    font-size: 70px;
+    color: orange;
+}
+ .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+
+
+
+
+
+
+  
+
+}
+
+
+
