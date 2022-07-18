@@ -1,111 +1,8 @@
 
 
-function loginfun() {
-    var name = document.forms['lforms']['lname'].value;
-    var pass = document.forms['lforms']['lpass'].value;
-    if (name == "" || name == null) {
-        document.getElementById('logerror').innerHTML = " * Enter UserName";
-        return false;
-    }
-    if (pass == "" || pass == null) {
-        document.getElementById('logerror').innerHTML = " * Enter password";
-        return false;
-    }
-}
 
 
 
-
-function sfuncode() {
-    var fname = document.forms['formre']['fname'].value;
-    var email = document.forms['formre']['email'].value;
-    var password = document.getElementById('rpass').value;
-    var lname = document.getElementById('rlname').value;
-    var zip = document.getElementById('rzip').value;
-    var uname = document.getElementById('uuname').value;
-    var repassword = document.getElementById('repass').value;
-    var chacker = document.getElementById("rchack").checked;
-    var county = document.getElementById("cosel").value;
-    var address = document.getElementById("radd").value;
-    var phone = document.getElementById("upno").value;
-
-
-    // alert(county);
-
-    if (fname == "" || fname == null) {
-        document.getElementById('errorBox').innerHTML = " * Enter Valid First Name";
-        document.formre.fname.focus();
-        return false;
-    }
-    if (lname == "" || lname == null) {
-        document.getElementById('errorBox').innerHTML = "* Enter Last Name";
-        document.formre.lname.focus();
-        return false;
-    }
-    if (county == "country") {
-        document.getElementById('errorBox').innerHTML = "* Enter country Name";
-        document.formre.county.focus();
-        return false;
-    }
-    if (uname == "" || name == null) {
-        document.getElementById('errorBox').innerHTML = "* Enter UserName";
-        document.formre.uname.focus();
-        return false;
-    }
-    if (email == "" || email == null) {
-        document.getElementById('errorBox').innerHTML = "* Enter Valid Email";
-        document.formre.email.focus();
-        return false;
-    }
-
-    if (zip == "" || zip == null) {
-        document.getElementById('errorBox').innerHTML = "* Enter City Zip Code";
-        document.formre.zip.focus();
-        return false;
-    }
-    if (address == "" || address == null) {
-        document.getElementById('errorBox').innerHTML = "* Enter Address";
-        document.formre.address.focus();
-        return false;
-    }
-    if (password == "" || password == null) {
-        document.getElementById('errorBox').innerHTML = "* Enter password";
-        document.formre.rpass.focus();
-        return false;
-    }
-    if (phone == "" || phone == null) {
-        document.getElementById('errorBox').innerHTML = "* Enter PhoneNo";
-        document.formre.upno.focus();
-        return false;
-    }
-    if (phone.length > 10) {
-        document.getElementById('errorBox').innerHTML = "* Enter valied PhoneNo";
-        document.formre.upno.focus();
-        return false;
-    }
-    if (repassword == "" || repassword == null) {
-        document.getElementById('errorBox').innerHTML = "* Enter Re-Type Password";
-        document.formre.repass.focus();
-        return false;
-    }
-    if (!(password === repassword)) {
-        document.getElementById('errorBox').innerHTML = "* Password Not mutch";
-        document.formre.repass.focus();
-        return false;
-    }
-    if (chacker === false) {
-        document.getElementById('errorBox').innerHTML = "* You can allow us Therme";
-        document.formre.chacker.focus();
-        return false;
-    }
-    // if(ValidateEmail(email)){
-    //     alert("Good It good Email");
-    // }
-    // else{
-    //     alert("Not vaild email");
-    // }
-
-}
 
 
 function ValidateEmail(input){
@@ -118,6 +15,129 @@ function ValidateEmail(input){
         return false;
     }
 }
+var input = document.getElementById("lastonr");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("addan").click();
+  }
+});
+
+
+      
+
+form.addEventListener('submit',(e) =>{
+    e.preventDefault();
+    checkinput();
+
+});
+
+function checkinput(){
+    var form =document.getElementById('form');
+    var name =document.getElementById('pname');
+    var type =document.getElementById('ptype');
+    var breed =document.getElementById('pbreed');
+    var color =document.getElementById('pcolor');
+    var dob =document.getElementById('pdob');
+    var price =document.getElementById('pprice');
+    var loctn =document.getElementById('plocation');
+    var gender =document.getElementById('pgender');
+    var vaccine =document.getElementById('pvaccine');
+    var img1 =document.getElementById('pimg1');
+    var train =document.getElementById('ptrain');
+    var about =document.getElementById('pabout');
+    vname=name.value;
+    vtype=type.value;
+    vbreed=breed.value;
+    vcolor=color.value;
+    vdob=dob.value;
+    vprice=price.value;
+    vloctn=loctn.value;
+    vgender=gender.value;
+    vvaccine=vaccine.value;
+    vimg1=img1.value;
+    vtrain=train.value;
+    vabout=about.value;
+    if (vname === '') {
+        seterror('namer','* Enter Valid Pet_Name ');
+    }
+    else{
+        set_susses('namer','');
+    }
+    if (vtype === 'Type') {
+       seterror('typer','* Select Pet Type');
+   }
+   else{
+    set_susses('typer','Select '+vtype+' ');
+}
+}
+function seterror(input,message){
+const inputer =document.getElementsByClassName(input)[0];
+const small =inputer.querySelector('small');
+small.innerText =message;
+inputer.className = input+" inputer error";
+}
+function set_susses(input,message){
+const inpute =document.getElementsByClassName(input)[0];
+const smal =inpute.querySelector('small');
+smal.innerText =message;
+inpute.className = input+" inputer success";
+}
+// function set_breed(){
+//     var type =document.getElementById('ptype').value;
+//     document.cookie = "Breed="+type;
+//     <?php 
+
+//     if(!isset($_COOKIE['Breed'])){
+//         $type = $_COOKIE['Breed'];
+//     $rs1 =new controller();
+//     $breeds = $rs1->getRs("SET @p0='$type'; CALL `findbreed`(@p0); ");
+//     while($breed =$breeds->fetch_assoc()){
+//         $_COOKIE['num']=$breed['breed_name'];
+//         ?>
+
+//           let num = getCookie("num");
+//         const inpu =document.getElementsByClassName('breed')[0];
+//         const select =inpu.querySelector('select');
+//         var option = document.createElement("option");
+//         option.text = num;
+//           select.add(option);
+//         <?php
+//     }}?>
+
+// }
+
+
+
+let input = document.getElementById("pimg1");
+    input.addEventListener("change", ()=>{
+        imagechack(input,'img1lable',0);
+
+});
+
+
+
+
+function imagechack(obj,lab,nu){
+let inputImage = document.querySelector("input[type=file]").files[0];
+    let itype = inputImage.type;
+    let validExtensions = ["image/jpeg", "image/jpg", "image/png"];
+    if(validExtensions.includes(itype)){
+        var mage =document.getElementById(lab);
+        
+           mage.style.backgroundImage = "url('../assets/image/cat.svg')"; 
+           mage.style.backgroundRepeat = "no-repeat"; 
+           mage.style.backgroundSize ='100% 100%';
+        
+              const inpute =document.getElementsByClassName('image1')[nu];
+              inpute.className = "image1 inputer remove";
+     }
+
+   }
+
+
+
+ 
 
 // function EmailValidation(enteredEmail)
 // {
@@ -135,3 +155,4 @@ function ValidateEmail(input){
 // return false;
 // }
 // }
+

@@ -80,9 +80,17 @@
     width: 50%;
 }
 
+.addani{
+    
+    padding-right: -50px;
+}
 
-
-
+.myback{
+    margin-top: -5%;
+    background-image:url('../image/bg2.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 
 

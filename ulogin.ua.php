@@ -18,7 +18,7 @@ include('class/test.php');
               <form class="loinform" method="post" name="lforms" onsubmit="return loginfun()">
                   <input type="text" name="lname" placeholder="Enter Username"><br>
                   <input type="password" name="lpass" placeholder="Enter Password"><br>
-                  <p class="mb-2 text-danger" id="logerror"></p>
+                  <p class="mb-2 al text-danger" id="logerror"></p>
                   <button class="fs-3 fw-bold" name="login" >Login</button>
               </form>
               <div class="mb-4">
@@ -30,7 +30,21 @@ include('class/test.php');
     
 </div>
     </div>
+<script>
+    function loginfun() {
+    var name = document.forms['lforms']['lname'].value;
+    var pass = document.forms['lforms']['lpass'].value;
+    if (name == "" || name == null) {
+        document.getElementById('logerror').innerHTML = " * Enter UserName";
+        return false;
+    }
+    if (pass == "" || pass == null) {
+        document.getElementById('logerror').innerHTML = " * Enter password";
+        return false;
+    }
+}
 
+</script>
 </section>
 <?php 
 if (isset($_GET['signup'])) {
@@ -61,7 +75,7 @@ if ($out) {
 }
 
 else{
-   echo "<h1>password wrong</h1>";
+   echo "<script>document.getElementById('logerror').innerHTML = ' * Invalid Login'; </script>";
 
 }
 }
@@ -69,6 +83,7 @@ else{
 
 
  ?>
+
 <footer>
 <?php include('include/footer.inc.php');  ?>
 </footer>

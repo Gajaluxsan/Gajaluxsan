@@ -277,13 +277,218 @@ mask-repeat: no-repeat;
     background-color: red;
     margin-top: 5%;
 }
+.myback{
+    margin-top: -5%;
+    background-image:url('../image/img.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 .ulclass li{
     background-size: cover;
     background-repeat: no-repeat;
     
 }
+.addani{
+    border-radius: 30px;
+    /*border: solid gray 1px;*/
+}
+.addani h1{
+        margin-top: 50px;
+}
+.addani hr{
+    height: 2px;
+    border: solid white 2px;
+    color: white;
+    width: 100%; 
+    border-left-width: 20%;
+}
+.addanimal p{
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 5px; 
+}
+.addanimal input,.addanimal select,.addanimal textarea{
+    width: 80%;
+    margin-left: 10%;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid black 1px;
+    margin-bottom: 5px;
+}
+.addanimal textarea{
+    border: solid black 1px;
+}
+.addanimal input:hover{
+   
+}
+input:focus,textarea:focus,select:focus {
+    outline: none;
+    width: 90%;
+} 
+::-webkit-in
+h1,p,div,h2,h3{
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.btngroun{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.btngroun input[type=submit],.btngroun input[type=reset]{
+    width: 35%;
+    border-radius: 10px;
+    border: none;
+    background-color:#2ABFDD;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
 
 
+
+.inputer {
+    /*border: solid red 3px;*/
+/*   position: absolute;
+   left:82%;
+   top: 91%;
+    visibility: hidden;*/
+}
+.inputer i{
+     position: absolute;
+      margin-left: -25px;
+      margin-top: 8px;
+       font-size: 15px;
+    visibility: hidden;
+
+}
+.addanimal i.fa-info{
+    color: #e74c3c;
+    
+   
+}
+.addanimal i.fa-check{
+    color: green;
+   
+}
+.addanimal small{
+    position: relative;
+    text-align: center;
+    margin-left: 11%;
+    margin-top: -10px;
+    color: red;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.addani .success i.fa-check{
+    visibility: visible;
+
+}
+.addani .error i.fa-info{
+    visibility: visible;
+}
+.addanimal .error input ,.addani .error select {
+    border: solid red 1px;
+        height: 30px;
+        border-radius: 10px;
+}
+.addani .error textarea{
+    border: solid red 1px;
+    border-radius: 10px;
+}
+.addani .success i.fa-check{
+    visibility: visible;
+
+}
+.addani .error i.fa-info{
+    visibility: visible;
+}
+.addani .error small{
+     visibility: visible;
+    color: red;
+}
+.addani .success small{
+    visibility: visible;
+    color: green;
+}
+.addani .success input,.addani .success select{
+        border: solid green 1px;
+        height: 30px;
+        margin-bottom: 0;
+        border-radius: 10px;
+}
+.addani .success textarea{
+    border: solid green 1px;
+    border-radius: 10px;
+}
+.addani .success i.fa-check{
+    visibility: visible;
+}
+.success label#img1lable{
+    border: solid green 1px;
+    border-radius: 10px;
+}
+.error label#img1lable{
+    border: solid red 1px;
+    border-radius: 10px;
+}
+.addanimal input[type=file]::-ms-browse {
+   background-color: #ffffff00;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.addanimal input[type=file]::-webkit-file-upload-button{
+   background-color: lightblue;
+    margin: 0px;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+border-radius: 9px;
+    border: 0px;
+    cursor: pointer;
+}
+.addanimal label{
+    margin-left: 10%;
+    overflow: hidden;
+    width: 80%;
+    border: solid gray 1px;
+    height: 205PX;
+}
+.image1 input[type='file']{
+    display: none;
+}
+.image1 i.fa-camera{
+    font-size: 50px;
+    margin-left: 35%;
+    margin-bottom: 20px;
+    visibility: visible;
+}
+.image1 p.fs-2{
+    margin-top: 25px;
+    text-align: center;
+}
+.addanimal span{
+    color: green;
+    text-align: center;
+    margin-left: 45%;
+
+}
+.remove p.fs-2 {
+    visibility: hidden;
+}
+.remove i#fa-camara{
+visibility: hidden;
+display: none;
+}
+.remove label{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 

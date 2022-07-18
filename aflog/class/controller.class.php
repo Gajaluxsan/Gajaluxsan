@@ -1,25 +1,73 @@
 <?php 
 
+class controller {
 
-include('connect.class.php');
+ private $localhost ="Localhost";
+    private $user ="root";
+    private $pass ="";
+    private $dbname ="puppys";
 
-class controller extends dbconnect{
+public function connect(){
+        try {
+             $conn=mysqli_connect($this->localhost,$this->user,$this->pass,$this->dbname);
+             if (!$conn) {
+            return false;
+             }
+
+             else{
+             return $conn;
+         }
+        } catch (Exception $e) {
+            // print("Error! : ".$e->getMessage()."<br/>");
+            return false;
+        }
+       
+    }
+
 
 public function getRs($sql){
+    $conn =$this->connect();
     try {
-        if ($stmt = mysqli_query($this->connect(), $sql)){
-         return $stmt;
+        if ($stmt = mysqli_query($conn, $sql)){
+        return $stmt;
+       }
+       else{
+        echo  mysqli_error($conn)."<script >alert('smoeerror');</script>";
+        return false;
+       }
+           
         }
-        else{
-          return "Can't Run This Sql Chack its Your Selft";
-        }
-      }
+      
          catch (Exception $e) {
-            return $e->getMessage();
+            return false;
         }
-     }
+
+
+    
+}
+// public static function getRsstatic($sql){
+//     $conn =$this->connect();
+//     try {
+//         if ($stmt = mysqli_query($conn, $sql)){
+//         return $stmt;
+//        }
+//        else{
+//         echo  mysqli_error($conn)."<script >alert('smoeerror');</script>";
+//         return false;
+//        }
+           
+//         }
+      
+//          catch (Exception $e) {
+//             return false;
+//         }
+
+
+    
+// }
+
 
 }
 
-
-
+// $nn = controller::getRsstatic('SELECT * FROM `animal`');
+// print_r($nn);

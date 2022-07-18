@@ -9,7 +9,7 @@ class dbc{
 
 public function connect(){
         try {
-             $conn= mysqli_connect($this->localhost,$this->user,$this->pass,$this->dbname);
+             $conn=mysqli_connect($this->localhost,$this->user,$this->pass,$this->dbname);
              if (!$conn) {
             return false;
              }

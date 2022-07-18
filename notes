@@ -26,3 +26,29 @@ $fullurl ="http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                 //                                         <?php
                                 //     echo "<script>alert('You Have account')</script>";
                                 // }
+
+
+
+// function set_breed(){
+//     var type =document.getElementById('ptype').value;
+//     document.cookie = "Breed="+type;
+//     <?php 
+    
+//     if(!isset($_COOKIE['Breed'])){
+//         $type = $_COOKIE['Breed'];
+//     $rs1 =new controller();
+//     $breeds = $rs1->getRs("SET @p0='$type'; CALL `findbreed`(@p0); ");
+//     while($breed =$breeds->fetch_assoc()){
+//         $_COOKIE['num']=$breed['breed_name'];
+//         ?>
+
+//           let num = getCookie("num");
+//         const inpu =document.getElementsByClassName('breed')[0];
+//         const select =inpu.querySelector('select');
+//         var option = document.createElement("option");
+//         option.text = num;
+//           select.add(option);
+//         <?php
+//     }}?>
+
+// }
