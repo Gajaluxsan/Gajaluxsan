@@ -4,7 +4,7 @@
 - 🧑‍💻 Full-Stack Developer with 2+ years of experience
 - 🛠️ Working with Laravel, Vue.js, and REST APIs
 - 🚀 Currently learning **React Native** and **Electron.js**
-- 🌐 Portfolio: [Coming soon — PrimeNest]
+- 🌐 Portfolio: [link](https://luxsan.cubesicloud.com/)
 - 📬 Connect with me: [LinkedIn](https://www.linkedin.com/in/gajaluxsan)
 
 ---
